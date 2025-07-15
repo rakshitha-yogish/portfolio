@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>B Y Rakshitha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>B Y Rakshitha</h1>
+    <nav>
+      <a href="#" onclick="showSection('about')">About</a>
+      <a href="#" onclick="showSection('projects')">Projects</a>
+      <a href="#" onclick="showSection('skills')">Skills</a>
+      <a href="#" onclick="showSection('achievements')">Achievements</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <a href="resume.pdf" download class="floating-btn" title="Download Resume">📄</a>
+
+  <!-- Sections -->
+  <section id="about" class="content-section">
+    <img src="profile.jpg" alt="Rakshitha's profile picture" />
+    <h2>About Me</h2>
+    <p>Engineering student at JSSATE-Bangalore with a CGPA of 8.5, passionate about software development, IoT integration, and AI research. Experienced with Java, Python, and front-end development. I'm constantly learning, building, and contributing to both academic and personal projects.</p>
+  </section>
+
+  <section id="projects" class="content-section" style="display: none;">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Smart Health Monitoring Belt</h3>
+      <p>Wearable device for immobile patients using sensors and GSM to transmit vitals to IoT dashboard.</p>
+    </div>
+    <div class="project">
+      <h3>AI-Enhanced Kernel</h3>
+      <p>AI-based Linux kernel extension using Random Forest for dynamic resource management in virtual environments.</p>
+    </div>
+    <div class="project">
+      <h3>Expense Tracker Dashboard</h3>
+      <p>Frontend project with HTML, CSS, JS, and fake MERN interaction. Tracks income and expenses with real-time DOM manipulation.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="content-section" style="display: none;">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Python, C, JavaScript, HTML, CSS</li>
+      <li><strong>Tools:</strong> Git, VS Code, Chrome DevTools</li>
+      <li><strong>Tech:</strong> MERN (Simulated), IoT Sensors, GSM</li>
+      <li><strong>Concepts:</strong> Data Structures, ML (Random Forest), UI/UX</li>
+    </ul>
+  </section>
+
+  <section id="achievements" class="content-section" style="display: none;">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Presented project at Anveshana 2025 (IEEE & ITS)</li>
+      <li>Co-authored research paper submitted to ETSAR</li>
+      <li>NSS Volunteer for tree plantation & awareness campaigns</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="content-section" style="display: none;">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rakshh.29@gmail.com">rakshh.29@gmail.com</a></p>
+    <p>Phone: +91 82967 00346</p>
+    
+  </section>
+
+  <footer>
+    <p>© 2025 Rakshitha B Y. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

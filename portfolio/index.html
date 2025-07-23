@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>B Y Rakshitha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>B Y Rakshitha</h1>
+    <nav>
+      <a href="#" onclick="showSection('about')">About</a>
+      <a href="#" onclick="showSection('projects')">Projects</a>
+      <a href="#" onclick="showSection('skills')">Skills</a>
+      <a href="#" onclick="showSection('achievements')">Achievements</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <a href="resume.pdf" download class="floating-btn" title="Download Resume">📄</a>
+
+  <!-- About Section -->
+  <section id="about" class="content-section active">
+    <img src="profile.jpg" alt="Rakshitha's profile picture" />
+    <h2>About Me</h2>
+    <p>Engineering student at JSSATE-Bangalore with a CGPA of 8.5, passionate about software development, IoT integration, and AI research. Experienced with Java, Python, and front-end development. I'm constantly learning, building, and contributing to both academic and personal projects.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="content-section">
+    <h2 style="text-align: center;">Projects</h2>
+
+    <div class="project-card">
+      <h3>AI-Augmented Kernel</h3>
+      <p>Linux kernel extension using machine learning to dynamically allocate system resources in virtualized environments.</p>
+      <a href="javascript:void(0);" onclick="toggleDetails('kernel-details')" class="view-more">View More</a>
+      <div id="kernel-details" class="project-details">
+        <ul>
+          <li>🧠 Used Random Forest to predict CPU, memory, and disk I/O usage</li>
+          <li>📈 Achieved 99.34% prediction accuracy on real-time system data</li>
+          <li>🧪 Integrated with Linux <code>cgroups</code> for live resource control</li>
+          <li>🔧 Tools: Python, psutil, Linux Kernel, Cgroups, Cross-validation</li>
+          <li>📊 Improved system efficiency under both high and low workloads</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Smart Health Monitoring Belt</h3>
+      <p>A wearable system designed to track vital health parameters and alert caregivers in real-time using IoT and GSM technologies.</p>
+      <a href="javascript:void(0);" onclick="toggleDetails('health-details')" class="view-more">View More</a>
+      <div id="health-details" class="project-details">
+        <ul>
+          <li>🩺 Monitors heart rate, body temperature, and fall detection</li>
+          <li>📡 Sends SMS alerts to caregivers via GSM module</li>
+          <li>🌐 Sends data to cloud via Wi-Fi for remote monitoring</li>
+          <li>⚙️ Tech Stack: Arduino, LM35, heartbeat sensor, accelerometer, GSM + Wi-Fi</li>
+          <li>👵 Designed for elderly and immobile patients</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Expense Tracker Dashboard</h3>
+      <p>A responsive web app to track income and expenses with real-time DOM updates and client-side validation using JavaScript.</p>
+      <a href="javascript:void(0);" onclick="toggleDetails('expense-details')" class="view-more">View More</a>
+      <div id="expense-details" class="project-details">
+        <ul>
+          <li>💸 Add, delete, and view categorized transactions</li>
+          <li>✅ Validates user input and handles empty or invalid fields</li>
+          <li>🎨 Soft pastel UI theme with light/dark mode support</li>
+          <li>📁 Simulated backend interaction with mock fetch request</li>
+          <li>🧰 Tech Stack: HTML5, CSS3, JavaScript ES6, VS Code</li>
+          <li>🔗 <a href="https://github.com/rakshitha-yogish/expense-tracker" target="_blank">GitHub Repo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>DSA Visualizer</h3>
+      <p>Interactive visualizer to demonstrate key data structures and algorithms concepts with real-time animations and adjustable controls.</p>
+      <a href="javascript:void(0);" onclick="toggleDetails('dsa-details')" class="view-more">View More</a>
+      <div id="dsa-details" class="project-details">
+        <ul>
+          <li>📊 Visualized algorithms like sorting through step-by-step DOM-based animations</li>
+          <li>⚙️ Adjustable speed and size sliders for customized learning pace</li>
+          <li>📱 Built with HTML5, CSS3, JavaScript (ES6) ensuring responsive design</li>
+          <li>🎨 Clean pastel-themed UI with color cues for better understanding of state changes</li>
+          <li>🧪 Tested across devices for accessibility and consistent performance</li>
+          <li>🔗 <a href="https://github.com/rakshitha-yogish/DSA-visualizer" target="_blank">GitHub Repo</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Skills -->
+  <section id="skills" class="content-section">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Python, C, JavaScript, HTML, CSS</li>
+      <li><strong>Tools:</strong> Git, VS Code, Chrome DevTools</li>
+      <li><strong>Tech:</strong> MERN (Simulated), IoT Sensors, GSM</li>
+      <li><strong>Concepts:</strong> Data Structures, ML (Random Forest), UI/UX</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="content-section">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Presented project at Anveshana 2025 (IEEE & ITS)</li>
+      <li>Co-authored research paper submitted to ETSAR</li>
+      <li>NSS Volunteer for tree plantation & awareness campaigns</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rakshh.29@gmail.com">rakshh.29@gmail.com</a></p>
+    <p>Phone: +91 82967 00346</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Rakshitha B Y. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
